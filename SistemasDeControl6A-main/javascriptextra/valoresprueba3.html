@@ -1,0 +1,32 @@
+	<html>
+<head>
+
+</head>
+<body>
+	
+	<script type="text/javascript" >
+	 var faradios = 0.00001 ;// 10uF 
+	 var henrios = 0.132 ; // 132 mHy
+	 var frecuencia = 777 ; // 777 Hz
+	 var dospi= 6.28; // Valor de 2pi
+	 	 function cuentas(){
+	 var multiplicacionXc = dospi*frecuencia*faradios;
+	 var XC= 1/multiplicacionXc;
+	 var XL= dospi*frecuencia*henrios;
+
+	 document.write("VALORES UTILIZADOS"	);		
+	 document.write("<br/><br/> FARADIOS UTILIZADOS=  " +faradios  ); document.write(" (10uF)");
+	 document.write("<br/><br/> HENRIOS UTILIZADOS=  " +henrios ); document.write(" (132mHy)");
+	 document.write("<br/><br/> FRENCUENCIA UTILIZADA=  " +frecuencia) ; document.write(" (777Hz)");
+	 document.write("<br/><br/> <br/> RESULTADOS");
+	 document.write("<br/><br/> Valor de XC= " +XC);
+	 document.write("<br/><br/> Valor de XL= " +XL);
+	 document.write('<p><a href="../index.html">VOLVER AL INDEX</a></p>')
+
+
+	 }
+	 	
+	</script>
+	
+	<input type="button" onclick="cuentas()" value="Valores de XC y XL">
+	<p><a href="../index.html">VOLVER AL INDEX</a></p>

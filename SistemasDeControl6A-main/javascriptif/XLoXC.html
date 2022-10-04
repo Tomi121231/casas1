@@ -1,0 +1,39 @@
+<html>
+<body>
+<script type="text/javascript">
+<!--
+var frecuencia = Number(prompt("Ingrese la frecuencia :p")); 
+var inductancia = Number(prompt("Ingrese la inductancia <{:V")); 
+var capacitancia = Number(prompt("Ingrese la capacitancia :O")); 
+var dospi= 3.141592 * 2;
+var XL= dospi*frecuencia*inductancia; 
+var XC= 1 / dospi*frecuencia*capacitancia; 
+
+document.write ("<br/> <b> VALORES INGRESADOS </b>");
+document.write ("<br/> ");
+document.write ("<br/> <b> Frecuencia= </b>" +frecuencia);
+document.write ("<br/> ");
+document.write ("<br/> <b> Inductancia= </b>" +inductancia);
+document.write ("<br/> ");
+document.write ("<br/><b>  Capacitancia=  </b>" +capacitancia);
+document.write ("<br/> ");
+document.write ("<br> <b> El circuito es más... </b> <br/>")
+
+if( XL > XC ){
+ document.write( "<br> <b> INDUCTIVO!!! </b><br/>"); 
+}
+if (XL < XC){
+ document.write (" <br/> <b> CAPACITIVO!!! </b> "); 
+}
+if (XL == XC){
+
+     document.write (" <br/> <b> RESONANTE!!! </b> "); 
+
+}   
+//-->
+</script>
+ <p> Ingresar otra valores para sacar saber si el circuito es capacitivo o inductivo...</p> 
+  <p><a href="../index.html">VOLVER AL INDEX</a></p>
+
+</body>
+</html>
